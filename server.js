@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken'); // importing jwt
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/newapp', {
+mongoose.connect('mongodb+srv://MyRohan:Admin123@cluster0.0y4xuom.mongodb.net', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('MongoDB Connected'))
